@@ -1,4 +1,3 @@
-JAMES-DATA
-==========
+# JAMES-DATA
 
-Common data set.
+Common data set and parser for james app.

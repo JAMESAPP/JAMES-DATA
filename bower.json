@@ -1,0 +1,26 @@
+{
+	"name": "james-data",
+	"version": "0.0.1",
+	"main": "dist/james-data.js",
+	"ignore": [
+		"**/*",
+		"!dist/*",
+		"!LICENSE",
+		"!README.md",
+		"!package.json"
+	],
+	"description": "Common data set.",
+	"author": [
+		"Jefferson Campos"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/JAMESAPP/JAMES-DATA",
+	"dependencies": {
+		"jquery": "latest",
+		"requirejs-text": "~2.0.12"
+	},
+	"devDependencies": {
+		"jasmine": "latest",
+		"requirejs": "latest"
+	}
+}

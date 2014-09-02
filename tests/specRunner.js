@@ -3,6 +3,7 @@ require.config({
 	baseUrl: '../',
 	paths: {
 		'jquery': 'bower_components/jquery/dist/jquery.min',
+		'underscore': 'bower_components/underscore/underscore',
 		'text': 'bower_components/requirejs-text/text',
 		'jasmine': 'bower_components/jasmine/lib/jasmine-core/jasmine'
 		, 'jasmine-html': 'bower_components/jasmine/lib/jasmine-core/jasmine-html'
@@ -32,7 +33,8 @@ require([
 ], function(Jasmine) {
 	require([
 		'tests/specs/JAMES-DATASpec',
-		'tests/specs/parserSpec'
+		'tests/specs/parserSpec',
+		'tests/specs/foodSpec'
 	], function() {
 		window.onload();
 	});

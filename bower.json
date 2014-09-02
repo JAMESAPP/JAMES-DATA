@@ -1,6 +1,6 @@
 {
 	"name": "james-data",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"main": "dist/james-data.js",
 	"ignore": [
 		"**/*",
@@ -17,6 +17,7 @@
 	"homepage": "https://github.com/JAMESAPP/JAMES-DATA",
 	"dependencies": {
 		"jquery": "latest",
+		"underscore": "latest",
 		"requirejs-text": "~2.0.12"
 	},
 	"devDependencies": {

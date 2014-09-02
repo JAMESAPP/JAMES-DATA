@@ -51,11 +51,46 @@ module.exports = function(grunt) {
 						'james-data': 'james-data'
 						, 'text': 'bower_components/requirejs-text/text'
 						, 'jquery': 'bower_components/jquery/dist/jquery'
+						, 'underscore': 'bower_components/underscore/underscore'
 					},
 					out: "build/james-data.min.js",
 					preserveLicenseComments: false,
-				    include: ["james-data"],
-				    exclude: ["text", "jquery"]
+				    include: ['james-data'],
+				    exclude: ['text', 'jquery', 'underscore']
+					, optimize: 'uglify2'
+					, generateSourceMaps: true
+				}
+			},
+			parser: {
+				options: {
+					baseUrl: ".",
+					paths: {
+						'parser': 'src/parser'
+						, 'text': 'bower_components/requirejs-text/text'
+						, 'jquery': 'bower_components/jquery/dist/jquery'
+						, 'underscore': 'bower_components/underscore/underscore'
+					},
+					out: "build/parser.min.js",
+					preserveLicenseComments: false,
+				    include: ["parser"],
+				    exclude: ["text", "jquery", "underscore"]
+					, optimize: 'uglify2'
+					, generateSourceMaps: true
+				}
+			},
+			food: {
+				options: {
+					baseUrl: ".",
+					paths: {
+						'food': 'src/food'
+						, 'text': 'bower_components/requirejs-text/text'
+						, 'jquery': 'bower_components/jquery/dist/jquery'
+						, 'underscore': 'bower_components/underscore/underscore'
+					},
+					out: "build/food.min.js",
+					preserveLicenseComments: false,
+				    include: ["food"],
+				    exclude: ["text", "jquery", "underscore"]
 					, optimize: 'uglify2'
 					, generateSourceMaps: true
 				}
@@ -71,6 +106,22 @@ module.exports = function(grunt) {
 					{
 						src: 'build/james-data.min.js.map',
 						dest: 'dist/james-data.min.js.map'
+					},
+					{
+						src: 'build/parser.min.js',
+						dest: 'dist/parser.min.js'
+					},
+					{
+						src: 'build/parser.min.js.map',
+						dest: 'dist/parser.min.js.map'
+					},
+					{
+						src: 'build/food.min.js',
+						dest: 'dist/food.min.js'
+					},
+					{
+						src: 'build/food.min.js.map',
+						dest: 'dist/food.min.js.map'
 					}
 				]
 			},
@@ -83,6 +134,22 @@ module.exports = function(grunt) {
 					{
 						src: 'build/james-data.min.js.map',
 						dest: '../james/app/js/libs/custom/james-data.min.js.map'
+					},
+					{
+						src: 'build/parser.min.js',
+						dest: '../james/app/js/libs/custom/parser.min.js'
+					},
+					{
+						src: 'build/parser.min.js.map',
+						dest: '../james/app/js/libs/custom/parser.min.js.map'
+					},
+					{
+						src: 'build/food.min.js',
+						dest: '../james/app/js/libs/custom/food.min.js'
+					},
+					{
+						src: 'build/food.min.js.map',
+						dest: '../james/app/js/libs/custom/food.min.js.map'
 					}
 				]
 			}

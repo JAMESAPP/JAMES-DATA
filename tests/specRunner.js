@@ -34,7 +34,8 @@ require([
 	require([
 		'tests/specs/JAMES-DATASpec',
 		'tests/specs/parserSpec',
-		'tests/specs/foodSpec'
+		'tests/specs/foodSpec',
+		'tests/specs/financialSpec'
 	], function() {
 		window.onload();
 	});

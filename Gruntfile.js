@@ -111,6 +111,23 @@ module.exports = function(grunt) {
 					, optimize: 'uglify2'
 					, generateSourceMaps: true
 				}
+			},
+			timesheet: {
+				options: {
+					baseUrl: '.',
+					paths: {
+						'food': 'src/timesheet'
+						, 'text': 'bower_components/requirejs-text/text'
+						, 'jquery': 'bower_components/jquery/dist/jquery'
+						, 'underscore': 'bower_components/underscore/underscore'
+					},
+					out: 'build/timesheet.min.js',
+					preserveLicenseComments: false,
+				    include: ['timesheet'],
+				    exclude: ['text', 'jquery', 'underscore']
+					, optimize: 'uglify2'
+					, generateSourceMaps: true
+				}
 			}
 		}
 		, copy: {

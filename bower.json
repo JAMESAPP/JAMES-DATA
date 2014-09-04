@@ -1,6 +1,6 @@
 {
 	"name": "james-data",
-	"version": "0.0.2",
+	"version": "0.0.5",
 	"main": "dist/james-data.js",
 	"ignore": [
 		"**/*",

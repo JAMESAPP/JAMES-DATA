@@ -1,8 +1,1 @@
-* DONE Import some tooling from goog-api - https://github.com/foguinhoperuca/goog-api
-** DONE tests
-** DONE bower
-** DONE gruntjs
-** DONE jshint
-** DONE .gitignore
-** DONE package.json
 * TODO Integrate package.json with bower.json - https://www.npmjs.org/package/grunt-write-bower-json

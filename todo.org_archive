@@ -1,0 +1,19 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /home/jefferson/universal/projects/james-data/todo.org
+
+
+* DONE Import some tooling from goog-api - https://github.com/foguinhoperuca/goog-api
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2014-09-04 Thu 19:21
+  :ARCHIVE_FILE: ~/universal/projects/james-data/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+** DONE tests
+** DONE bower
+** DONE gruntjs
+** DONE jshint
+** DONE .gitignore
+** DONE package.json

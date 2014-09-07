@@ -99,7 +99,7 @@ module.exports = function(grunt) {
 				options: {
 					baseUrl: '.',
 					paths: {
-						'food': 'src/financial'
+						'financial': 'src/financial'
 						, 'text': 'bower_components/requirejs-text/text'
 						, 'jquery': 'bower_components/jquery/dist/jquery'
 						, 'underscore': 'bower_components/underscore/underscore'
@@ -116,7 +116,7 @@ module.exports = function(grunt) {
 				options: {
 					baseUrl: '.',
 					paths: {
-						'food': 'src/timesheet'
+						'timesheet': 'src/timesheet'
 						, 'text': 'bower_components/requirejs-text/text'
 						, 'jquery': 'bower_components/jquery/dist/jquery'
 						, 'underscore': 'bower_components/underscore/underscore'
@@ -206,7 +206,6 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.registerTask('build', ['clean', 'copy', 'requirejs']);
-	grunt.registerTask('james', ['requirejs', 'copy:james']);
-	grunt.registerTask('bower', ['requirejs', 'copy:bower']);
+	grunt.registerTask('james', ['clean', 'requirejs', 'copy:james']);
+	grunt.registerTask('bower', ['clean', 'requirejs', 'copy:bower']);
 };

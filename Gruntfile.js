@@ -171,35 +171,35 @@ module.exports = function(grunt) {
 				files: [
 					{
 						src: 'build/james-data.min.js',
-						dest: '../james/app/js/libs/custom/james-data/james-data.min.js'
+						dest: '../james/app/js/libs/custom/test-dev/james-data/james-data.min.js'
 					},
 					{
 						src: 'build/james-data.min.js.map',
-						dest: '../james/app/js/libs/custom/james-data/james-data.min.js.map'
+						dest: '../james/app/js/libs/custom/test-dev/james-data/james-data.min.js.map'
 					},
 					{
 						src: 'build/parser.min.js',
-						dest: '../james/app/js/libs/custom/james-data/parser.min.js'
+						dest: '../james/app/js/libs/custom/test-dev/james-data/parser.min.js'
 					},
 					{
 						src: 'build/parser.min.js.map',
-						dest: '../james/app/js/libs/custom/james-data/parser.min.js.map'
+						dest: '../james/app/js/libs/custom/test-dev/james-data/parser.min.js.map'
 					},
 					{
 						src: 'build/food.min.js',
-						dest: '../james/app/js/libs/custom/james-data/food.min.js'
+						dest: '../james/app/js/libs/custom/test-dev/james-data/food.min.js'
 					},
 					{
 						src: 'build/food.min.js.map',
-						dest: '../james/app/js/libs/custom/james-data/food.min.js.map'
+						dest: '../james/app/js/libs/custom/test-dev/james-data/food.min.js.map'
 					},
 					{
 						src: 'build/financial.min.js',
-						dest: '../james/app/js/libs/custom/james-data/financial.min.js'
+						dest: '../james/app/js/libs/custom/test-dev/james-data/financial.min.js'
 					},
 					{
 						src: 'build/financial.min.js.map',
-						dest: '../james/app/js/libs/custom/james-data/financial.min.js.map'
+						dest: '../james/app/js/libs/custom/test-dev/james-data/financial.min.js.map'
 					}
 				]
 			}

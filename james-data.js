@@ -15,6 +15,6 @@
 		Parser: Parser,
 		Food: Food,
 		Financial: Financial,
-		Tiesheet: Timesheet
+		Timesheet: Timesheet
 	};
 }));

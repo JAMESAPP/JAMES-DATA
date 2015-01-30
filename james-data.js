@@ -13,7 +13,6 @@
 	return {
 		VERSION: JSON.parse(PackageJSON).version,
 		Parser: Parser,
-		Food: Food,
 		Financial: Financial,
 		Timesheet: Timesheet
 	};

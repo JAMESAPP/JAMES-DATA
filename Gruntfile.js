@@ -78,23 +78,6 @@ module.exports = function(grunt) {
 					, generateSourceMaps: true
 				}
 			},
-			food: {
-				options: {
-					baseUrl: '.',
-					paths: {
-						'food': 'src/food'
-						, 'text': 'bower_components/requirejs-text/text'
-						, 'jquery': 'bower_components/jquery/dist/jquery'
-						, 'underscore': 'bower_components/underscore/underscore'
-					},
-					out: 'build/food.min.js',
-					preserveLicenseComments: false,
-				    include: ['food'],
-				    exclude: ['text', 'jquery', 'underscore']
-					, optimize: 'uglify2'
-					, generateSourceMaps: true
-				}
-			},
 			financial: {
 				options: {
 					baseUrl: '.',
@@ -150,14 +133,6 @@ module.exports = function(grunt) {
 						dest: 'dist/parser.min.js.map'
 					},
 					{
-						src: 'build/food.min.js',
-						dest: 'dist/food.min.js'
-					},
-					{
-						src: 'build/food.min.js.map',
-						dest: 'dist/food.min.js.map'
-					},
-					{
 						src: 'build/financial.min.js',
 						dest: 'dist/financial.min.js'
 					},
@@ -184,14 +159,6 @@ module.exports = function(grunt) {
 					{
 						src: 'build/parser.min.js.map',
 						dest: '../james/app/js/libs/custom/test-dev/james-data/parser.min.js.map'
-					},
-					{
-						src: 'build/food.min.js',
-						dest: '../james/app/js/libs/custom/test-dev/james-data/food.min.js'
-					},
-					{
-						src: 'build/food.min.js.map',
-						dest: '../james/app/js/libs/custom/test-dev/james-data/food.min.js.map'
 					},
 					{
 						src: 'build/financial.min.js',
